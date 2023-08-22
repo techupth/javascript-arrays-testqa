@@ -6,3 +6,4 @@ let blueColor;
 let fourthColor;
 let fifthColor;
 let tenthColor;
+let test
