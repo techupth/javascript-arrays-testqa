@@ -1,5 +1,3 @@
-// Exercise #3: Array of Orders
-
 let orders = [
   {
     id: 1,
@@ -42,9 +40,15 @@ let orders = [
     creditCardType: "jcb",
   },
 ];
-
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let totalPurchaseOfJoannet;
-let totalPurchaseOfDary;
+let isArray = Array.isArray(orders);
+let creditCardTypeOfBlindermann = orders[2].creditCardType;
+
+orders[2].creditCardType = "visa";
+
+let totalPurchaseOfJoannet = orders[3].productQuantity;
+let totalPurchaseOfDary = orders[1].productPrice * orders[1].productQuantity;
+
+orders.shift();
+
+console.log(orders);
